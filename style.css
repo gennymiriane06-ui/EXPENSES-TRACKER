@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('assets/tracks.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  color: #111827;
+}
+
+.totals {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  background: #f9fafb;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 120px;
+}
+
+.card p {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.card span {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.income-card span {
+  color: #16a34a;
+}
+
+.expense-card span {
+  color: #dc2626;
+}
+
+.main-content {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.transaction-section,
+.add-section {
+  background: white;
+  padding: 1.2rem;
+  border-radius: 10px;
+  flex: 1 1 400px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.transaction-section h2,
+.add-section h2 {
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.transactions-table th {
+  background: #3b82f6;
+  color: white;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.transactions-table tr:hover {
+  background: #f9fafb;
+}
+
+.transactions-table td.income {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.transactions-table td.expense {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+button.delete-btn {
+  background: #ef4444;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.delete-btn:hover {
+  background: #dc2626;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+form input,
+form select {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+form button {
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 6px;
+}
+
+form button:hover {
+  background: #2563eb;
+}
+
+#notificationcontainer {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 1000;
+}
+
+.notification {
+  background: #10b981;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0.95;
+}
+
+.notification.expense {
+  background: #ef4444;
+}
+
+.notification.warning {
+  background: #fbbf24;
+}
+
+@media (max-width: 600px) {
+  .totals {
+    flex-direction: column;
+  }
+
+  td, th {
+    padding: 6px 4px;
+    font-size: 12px;
+  }
+
+  .delete-btn {
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+}
