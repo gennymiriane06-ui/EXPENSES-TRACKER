@@ -2,7 +2,7 @@
 
 A simple and responsive Expense Tracker built with HTML, CSS, and JavaScript. This application helps users manage their finances by tracking income and expenses, calculating balances, and storing transaction data locally so it persists even after refreshing the page.
 
-<!-- ![Expense Tracker Screenshot](assets) -->
+![Expense Tracker Screenshot](assets/work.png)
 
 
 ## Features
