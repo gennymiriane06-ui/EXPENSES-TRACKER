@@ -7,39 +7,38 @@ A simple and responsive Expense Tracker built with HTML, CSS, and JavaScript. Th
 
 ## Features
 
-### ➕ Add Transactions
+* ➕Add Transactions
 
-* Add income and expense transactions.
-* Enter a transaction description and amount.
-* Positive amounts represent **income**.
-* Negative amounts represent **expenses**.
+  * Add income and expense transactions.
+  * Enter a transaction description and amount.
+  * Positive amounts represent **income**.
+  * Negative amounts represent **expenses**.
 
-### 📄 Transaction History
+* 📄Transaction History
 
-* View all transactions in a history list.
-* Income transactions are marked with a **+** sign.
-* Expense transactions are marked with a **−** sign.
-* Delete transactions individually.
+  * View all transactions in a history list.
+  * Income transactions are marked with a **+** sign.
+  * Expense transactions are marked with a **−** sign.
+  * Delete transactions individually.
 
-### Financial Summary
+* Financial Summary
 
 The application automatically calculates and displays:
 
-* Total Balance
-* Total Income
-* Total Expenses
+  * Total Balance
+  * Total Income
+  * Total Expenses
 
-### 💾 Local Storage Support
+* 💾Local Storage Support
 
-* Transactions are saved in the browser using `localStorage`.
-* Data remains available even after refreshing or closing the browser.
+  * Transactions are saved in the browser using `localStorage`.
+  * Data remains available even after refreshing or closing the browser.
 
-### Responsive Design
+* Responsive Design
 
-* Works seamlessly on desktop, tablet, and mobile devices.
+  * Works seamlessly on desktop, tablet, and mobile devices.
 
 ## Project Structure
-
 
 expense-tracker/
 ├── index.html
