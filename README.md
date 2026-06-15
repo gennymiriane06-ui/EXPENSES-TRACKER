@@ -90,4 +90,3 @@ This project demonstrates:
 Built with using HTML, CSS, and JavaScript.
 
 Feel free to fork, improve, and customize this project for your own needs.
-# EXPENSES-TRACKER
